@@ -21,7 +21,14 @@ const useStyles = makeStyles(theme => ({
         borderBottom: "2px solid orange",
       },
     },
-  }
+  },
+  label: {
+    "&.Mui-focused": {
+      "&.MuiFormLabel-root": {
+        color: orange[500] 
+      },
+    },
+  },
 }));
 
 const TodoForm = () => {
@@ -49,13 +56,14 @@ const TodoForm = () => {
         <Grid item xs={12} sm={10}>
           
           <TextField  
-          InputProps={state.myTheme === "dark" ? { className: classes.input } : {}}
-          className={classes.textField}  
-          id="standart-basic"
-          label="Enter new todo"
-          value={todo}
-          onChange={handleTodoChange}
-          onKeyUp={handleSubmitForm}
+            InputProps={state.myTheme === "dark" ? { className: classes.input } : {}}
+            InputLabelProps={state.myTheme === "dark" ? { className: classes.label } : {}}
+            className={classes.textField}  
+            id="standart-basic"
+            label="Enter new todo"
+            value={todo}
+            onChange={handleTodoChange}
+            onKeyUp={handleSubmitForm}
           /> 
       </Grid>
       <Grid item xs={12} sm={2}>

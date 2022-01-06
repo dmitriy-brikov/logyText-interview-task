@@ -1,6 +1,5 @@
 import React, { useContext, useReducer } from "react";
 import ReactDOM from "react-dom";
-import './app.css'
 
 // Add components
 import NavBar from "./components/NavBar";
