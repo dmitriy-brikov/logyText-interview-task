@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/logyText-interview-task/precache-manifest.11dfbd7d82135b397a886065c180fcf5.js"
+  "/logyText-interview-task/precache-manifest.a042c893f00a185f7e640a53643d258b.js"
 );
 
 self.addEventListener('message', (event) => {
